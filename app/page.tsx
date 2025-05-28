@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import styles from './styles/home.module.css';
-import { instrumentSans } from './fonts';
+import { instrumentSerif, ibmPlexSans } from './fonts';
 
 export default function Home() {
   // Add your prototypes to this array
@@ -24,9 +26,9 @@ export default function Home() {
   ];
 
   return (
-    <div className={`${styles.container} ${instrumentSans.className}`}>
+    <div className={`${styles.container} ${ibmPlexSans.className}`}>
       <header className={styles.header}>
-        <h1>Elizabeth's prototypes</h1>
+        <h1 className={instrumentSerif.className}>Shauna's prototypes</h1>
       </header>
 
       <main>
@@ -38,7 +40,7 @@ export default function Home() {
               href={prototype.path} 
               className={styles.card}
             >
-              <h3>{prototype.title}</h3>
+              <h3 className={instrumentSerif.className}>{prototype.title}</h3>
               <p>{prototype.description}</p>
             </Link>
           ))}

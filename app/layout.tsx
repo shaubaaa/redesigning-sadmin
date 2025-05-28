@@ -8,21 +8,11 @@
  */
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { ibmPlexSans } from "./fonts";
 import "./styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Elizabeth's prototypes",
+  title: "Shauna's prototypes",
   description: "The home for all my prototypes",
   icons: {
     icon: [
@@ -41,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={ibmPlexSans.className}>
         {children}
       </body>
     </html>
