@@ -8,6 +8,11 @@ export default function Home() {
   // Add your prototypes to this array
   const prototypes = [
     {
+      title: 'Death Admin Exhibition Poster',
+      description: 'Interactive exhibition poster layouts exploring the administrative burden during bereavement',
+      path: '/prototypes/death-admin-poster',
+    },
+    {
       title: 'Getting started',
       description: 'How to create a prototype',
       path: '/prototypes/example'
@@ -16,6 +21,16 @@ export default function Home() {
       title: 'Confetti button',
       description: 'An interactive button that creates a colorful confetti explosion',
       path: '/prototypes/confetti-button'
+    },
+    {
+      title: 'Mac Piano',
+      description: 'A retro-styled digital piano interface inspired by classic Mac OS',
+      path: '/prototypes/mac-piano'
+    },
+    {
+      title: 'Typography Experiments',
+      description: 'Interactive typography effects using pure CSS, including circular text, 3D transforms, and wave animations',
+      path: '/prototypes/typography-experiments'
     },
     // Add your new prototypes here like this:
     // {
